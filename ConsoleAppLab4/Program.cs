@@ -16,7 +16,7 @@ var items = new Dictionary<string, Action>
         { "Display all user tasks", () => taskServiceManager.DisplayAllUserTasks() },
         { "Display current user tasks", () => taskServiceManager.DisplayCurrentUserTasks() },
         { "Make copy of test registry key", () => regManagerTest.TestExportRegistryKey() },
-        { "Exit 3", () => { Console.WriteLine("Exiting the program"); Environment.Exit(0); } }
+        { "Exit", () => { Console.WriteLine("Exiting the program"); Environment.Exit(0); } }
     };
 
 var menu = new Menu(items);
